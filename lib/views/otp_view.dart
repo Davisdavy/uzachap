@@ -6,6 +6,9 @@ import 'package:uzachap/widgets/custom_btn.dart';
 import 'package:uzachap/widgets/custom_input.dart';
 
 class OTPView extends StatefulWidget {
+  OTPView({Key key, this.verId, this.uid}): super(key: key);
+  //update the constructor to include the uid
+  final String uid, verId; //include this
   @override
   _OTPViewState createState() => _OTPViewState();
 }

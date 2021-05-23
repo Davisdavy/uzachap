@@ -49,13 +49,13 @@ class _LoginViewState extends State<LoginView> {
         (PhoneAuthCredential phoneAuthCredential) async {
 
       await auth.signInWithCredential(phoneAuthCredential);
-      showSnackbar("Phone number automatically verified and user signed in: ${FirebaseAuth.instance.currentUser.uid}");
+      showSnackbar("Phone number automatically verified");
     };
 
     //Listens for errors with verification, such as too many attempts
     PhoneVerificationFailed verificationFailed =
         (FirebaseAuthException authException) {
-      showSnackbar('Phone number verification failed. Code: ${authException.code}. Message: ${authException.message}');
+      showSnackbar('Phone number verification failed.');
     };
 
     //Callback for when the code is sent
@@ -78,9 +78,19 @@ class _LoginViewState extends State<LoginView> {
           verificationCompleted: verificationCompleted,
           verificationFailed: verificationFailed,
           codeSent: codeSent,
-          codeAutoRetrievalTimeout: codeAutoRetrievalTimeout);
+          codeAutoRetrievalTimeout: codeAutoRetrievalTimeout).then((value){
+        Navigator.push(
+            context,
+            PageTransition(
+                child: OTPView(
+                  verId: _verificationId,
+                  uid: FirebaseAuth.instance
+                      .currentUser.uid,
+                ),
+                type: PageTransitionType.rightToLeft));
+      });
     } catch (e) {
-      showSnackbar("Failed to Verify Phone Number: ${e}");
+      showSnackbar("Failed to Verify Phone Number");
     }
   }
 
