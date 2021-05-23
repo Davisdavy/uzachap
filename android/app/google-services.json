@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "121169511787",
+    "project_id": "uzachap-892cd",
+    "storage_bucket": "uzachap-892cd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:121169511787:android:6c66f4bf7c84b622ccb82e",
+        "android_client_info": {
+          "package_name": "com.alvinedu.uzachap"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "121169511787-647u12e6d8nbg0rndoq3l1kotmn42ru8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.alvinedu.uzachap",
+            "certificate_hash": "a01c3d39a33bcf452a55dc0346ef2878dc135ac8"
+          }
+        },
+        {
+          "client_id": "121169511787-upj0ev74qpul7g2tqnsp8hfc7fhm5g37.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFD2G8z1S3DiGjjRk9Et5HD7fe8Ia63Lk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "121169511787-upj0ev74qpul7g2tqnsp8hfc7fhm5g37.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
