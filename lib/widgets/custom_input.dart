@@ -7,9 +7,9 @@ class CustomInput extends StatelessWidget {
   final Function(String) onSubmitted;
   final FocusNode focusNode;
   final TextInputAction textInputAction;
-  final TextInputType inputType;
+
   final bool isPasswordField;
-  CustomInput({this.hintText, this.onChanged, this.onSubmitted, this.focusNode, this.inputType,  this.textInputAction, this.isPasswordField});
+  CustomInput({this.hintText, this.onChanged, this.onSubmitted, this.focusNode, this.textInputAction, this.isPasswordField});
 
   @override
   Widget build(BuildContext context) {
@@ -18,18 +18,18 @@ class CustomInput extends StatelessWidget {
     return Container(
       margin: EdgeInsets.symmetric(
         vertical: 8.0,
-        horizontal: 24.0,
+        horizontal: 20.0,
       ),
       decoration: BoxDecoration(
-          border: Border.all(color: Colors.grey.shade300),
+          border: Border.all(color: Colors.grey.shade400, width: 1.6),
           color: Colors.transparent,
-          borderRadius: BorderRadius.circular(12.0)
+          borderRadius: BorderRadius.circular(8.0)
       ),
       child: TextField(
         obscureText: _isPasswordField,
         focusNode: focusNode,
         onChanged: onChanged,
-        keyboardType: inputType,
+        keyboardType: TextInputType.number,
         onSubmitted: onSubmitted,
         textInputAction: textInputAction,
         decoration: InputDecoration(

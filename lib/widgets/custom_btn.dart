@@ -19,9 +19,9 @@ class CustomBtn extends StatelessWidget {
       child: Container(
         height: 55.0,
         decoration: BoxDecoration(
-          color: _outlineBtn ? Colors.transparent : darkText,
+          color: _outlineBtn ? Colors.transparent : bgColor,
           borderRadius: BorderRadius.circular(
-            20.0,
+            8.0,
           ),
         ),
         margin: EdgeInsets.symmetric(
@@ -38,7 +38,7 @@ class CustomBtn extends StatelessWidget {
                   style: TextStyle(
                     fontSize: 16.0,
                     color: _outlineBtn ? Colors.black : whiteColor,
-                    fontWeight: FontWeight.w200,
+                    fontWeight: FontWeight.w500,
                   ),
                 ),
               ),

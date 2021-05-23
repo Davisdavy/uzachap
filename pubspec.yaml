@@ -53,6 +53,10 @@ flutter:
     - assets/car.png
     - assets/logo-white.png
     - assets/uz.png
+    - assets/back.png
+    - assets/arrow.png
+    - assets/logout.png
+    - assets/wh.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
