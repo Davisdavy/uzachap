@@ -227,8 +227,16 @@ class _LoginViewState extends State<LoginView> {
                   ),
                   SizedBox(height: 10.0),
                   CustomInput(
-                    hintText: '70 000 000 00',
+                    hintText: '  000 000  ',
                     textInputAction: TextInputAction.done,
+                    onChanged: (value){
+                      otpController = value;
+                    },
+                    focusNode: _phoneFocusNode,
+                    onSubmitted: (value){
+                      _phoneFocusNode.requestFocus();
+                    },
+
                   ),
                   SizedBox(height: 10.0),
                   Text("Only correct code will log you in!", style: TextStyle(color: darkText.withOpacity(0.5), fontSize: 16.0, wordSpacing: 2.0, fontWeight: FontWeight.w500),),

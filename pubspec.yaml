@@ -32,6 +32,7 @@ dependencies:
   firebase_auth:
   sms_autofill:
   page_transition:
+  http:
 
 dev_dependencies:
   flutter_test:
@@ -57,6 +58,7 @@ flutter:
     - assets/arrow.png
     - assets/logout.png
     - assets/wh.png
+    - assets/fly.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

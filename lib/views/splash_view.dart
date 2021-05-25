@@ -28,7 +28,7 @@ class _SplashViewState extends State<SplashView> {
         //error in the snapshot
         if (snapshot.connectionState == ConnectionState.done) {
           Timer(
-              Duration(seconds: 2),
+              Duration(seconds: 3),
                   () => Navigator.pushReplacement(
                   context,
                   PageTransition(
